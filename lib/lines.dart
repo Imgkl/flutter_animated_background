@@ -107,12 +107,7 @@ class RacingLinesBehaviour extends Behaviour {
         ? Offset(spawnMainAxis, spawnCrossAxis)
         : Offset(spawnCrossAxis, spawnMainAxis);
     line.thickness = random.nextInt(2) + 2;
-    line.color = HSVColor.fromAHSV(
-      random.nextDouble() * 0.3 + 0.2,
-      random.nextInt(45) * 8.0,
-      random.nextDouble() * 0.6 + 0.3,
-      random.nextDouble() * 0.6 + 0.3,
-    ).toColor();
+    line.color = Colors.white;
   }
 
   @override
